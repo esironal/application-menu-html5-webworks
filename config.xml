@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:rim="http://www.blackberry.com/ns/widgets" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" id="ApplicationMenu">
+  <name>Applicattion Menu HTML5</name>
+  <author>Joel Ortiz</author>
+  <description>This app demonstrates how to implement Application Menu</description>
+  <content src="index.html"/>
+  <icon src="img/icoApp.png"/>
+  <feature id="blackberry.event"/>
+  <feature id="blackberry.app">
+    <param name="orientation" value="portrait"/>
+  </feature>
+</widget>

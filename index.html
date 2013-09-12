@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Application Menu</title>
+<link rel="stylesheet" href="css/BlackBerry-JQM-all-1.0.0.css">
+<script src="js/BlackBerry-JQM-all-1.0.0.js"></script>
+<script src="local:///chrome/webworks.js"></script>
+<script>
+function verMenuApplication(){
+	$("#top").panel("open");
+}
+function init(){
+	blackberry.event.addEventListener("swipedown", verMenuApplication);
+}
+</script>
+</head>
+
+<body onLoad="javascript:init();">
+<div data-role="page">
+  <div data-role="panel" id="top" data-dark-modal="true" data-position="top" data-display="push" data-theme="a">
+    <div data-role="applicationmenu"> <a data-role="action" href="#"> <img src="img/icoHelp.png" alt="Help" />
+      <p>Help</p>
+      </a> <a data-role="SettingsActionItem" href="#"> <img src="img/icoSettings.png" alt="Settings" />
+      <p>Settings</p>
+      </a> </div>
+  </div>
+  <div data-role="header" data-theme="b" data-position="fixed">
+    <h1>Application Menu</h1>
+  </div>
+  <div data-role="content" style="text-align:center">¡Swipe Down!</div>
+  <div data-role="footer" data-position="fixed">
+    <div data-role="actionbar">
+    </div>
+  </div>
+</div>
+</body>
+</html>
